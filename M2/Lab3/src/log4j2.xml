@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+	<Appenders>
+		<File name="File" filename="Lab2_3.log">
+			<PatternLayout
+				pattern="%d{HH:mm:ss.SSS} %-5level %logger{36} - %msg%n" />
+		</File>
+	</Appenders>
+	<Loggers>
+		<Root level="INFO">
+			<AppenderRef ref="File" />
+		</Root>
+		<Logger name="Controller" level="INFO" />
+		<Logger name="Model" level="INFO" />
+		<Logger name="View" level="INFO" />
+	</Loggers>
+</Configuration>
